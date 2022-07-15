@@ -1,0 +1,128 @@
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    background-image: url(default.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+.weather-container
+{
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+h1
+{
+    margin: 0 0 1rem 0;
+}
+
+input
+{
+    margin: 1rem;
+    margin-right: 0;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+i
+{
+    padding: 13px 10px;
+}
+
+#btn
+{
+    border: none;
+    border-radius: 100%;
+    margin: 0 1rem 0 0;
+}
+
+.temperature-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.temp
+{
+    cursor: pointer;
+}
+
+#temperature, #temperature-unit
+{
+    font-size: 3.5rem;
+    color:rgb(127, 255, 185);
+}
+
+sup
+{
+    font-size: 2rem;
+    color:rgb(127, 255, 185);
+}
+
+#description
+{
+    text-transform: capitalize;
+}
+
+.time
+{
+    font-size: x-large;
+}
+
+#icon
+{
+    display: none;
+    margin-left: -20px;
+}
+
+@media screen and (max-width:450px) 
+{
+    .weather-container
+    {
+        padding: 20px;
+    }
+    input
+    {
+        margin: 10px 0;
+        padding: 5px 10px;
+    }
+    form
+    {
+        margin-bottom: 0.5rem;
+    }
+    #btn
+    {
+        margin: 0;
+    }
+    i
+    {
+        padding: 7px 5px;
+    }
+    #temperature, #temperature-unit
+    {
+        font-size: 2.5rem;
+        color:rgb(127, 255, 185);
+    }
+    sup
+    {
+        font-size: 1rem;
+        color:rgb(127, 255, 185);
+    }
+    #icon
+    {
+        margin-left: -10px;
+        width:70px;
+        height: 70px;
+    }
+}
